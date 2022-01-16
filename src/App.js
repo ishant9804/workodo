@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { TextField, Button } from '@mui/material';
+import Todo from './components/Todo';
 import './App.css';
 
 function App () {
@@ -21,7 +22,7 @@ function App () {
         <Button variant='contained' color="primary" onClick={addTodo}>Add Todo</Button>
       </form>
       <ul>
-        {todos.map(todo => <li>{todo}</li>)}
+        {todos.map(todo => <Todo todo={todo} />)}
       </ul>
     </div>
   );
