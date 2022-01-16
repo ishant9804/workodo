@@ -1,3 +1,7 @@
+import { initializeApp } from 'firebase/app';
+import { getFirestore } from 'firebase/firestore';
+
+
 const firebaseConfig = {
     apiKey: "AIzaSyBcY0ElaTMnlTXAehZG36evsxH68Q--8c4",
     authDomain: "workodo-bffec.firebaseapp.com",
