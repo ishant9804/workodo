@@ -1,11 +1,14 @@
-import { List, ListItem, ListItemAvatar, ListItemText } from '@mui/material';
+import { List, ListItem, ListItemAvatar, ListItemText } from "@mui/material";
+import { db } from "../firebase.js";
+import { doc, deleteDoc } from "firebase/firestore";
+import './todo.css';
 
-const Todo = ({ todo }) => {
+const Todo = ({ arr }) => {
     return (
         <List className='todo_list'>
             <ListItem>
                 <ListItemAvatar />
-                <ListItemText primary={todo} secondary={todo} />
+                <ListItemText primary={arr.item.todo} secondary={arr.item.todo} />
             </ListItem>
         </List>
     )
