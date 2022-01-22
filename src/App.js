@@ -4,6 +4,7 @@ import Todo from './components/Todo';
 import { db } from './firebase.js';
 import { collection, query, orderBy, onSnapshot, serverTimestamp, addDoc } from 'firebase/firestore';
 import './App.css';
+import CustomInput from './components/CustomInput';
 
 const q = query(collection(db, 'todos'), orderBy('timestamp', 'desc'))
 
