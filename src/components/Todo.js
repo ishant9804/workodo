@@ -5,8 +5,11 @@ import { doc, deleteDoc } from "firebase/firestore";
 import './todo.css';
 
 const Todo = ({ arr }) => {
+    const matches = useMediaQuery('(max-width:600px)');
     return (
-        <List className='todo_list'>
+        <List className='todo_list' sx={{
+           '& .MuiTextField-root': { **width: matches === false ? '35vw' : '70vw'** },
+        }}>
             <ListItem>
                 <ListItemAvatar />
                 <ListItemText primary={arr.item.todo} secondary={arr.item.todo} />
