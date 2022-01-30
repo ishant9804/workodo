@@ -6,7 +6,7 @@ import './todo.css';
 
 const Todo = ({ arr }) => {
     return (
-        <List className='todo_list'>
+        <List className='todo_list' >
             <ListItem>
                 <ListItemAvatar />
                 <ListItemText primary={arr.item.todo} secondary={arr.item.todo} />
