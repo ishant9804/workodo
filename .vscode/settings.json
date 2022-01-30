@@ -3,5 +3,12 @@
     "editor.codeActionsOnSave": {
         "source.fixAll": true,
         "source.organizeImports": true,
-    }
+    },
+    "javascript.inlayHints.parameterNames.enabled": "all",
+    "javascript.inlayHints.variableTypes.enabled": true,
+    "javascript.referencesCodeLens.enabled": true,
+    "javascript.updateImportsOnFileMove.enabled": "prompt",
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
 }

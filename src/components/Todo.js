@@ -1,7 +1,7 @@
-import { List, ListItem, ListItemAvatar, ListItemText } from "@mui/material";
 import DeleteIcon from "@mui/icons-material/Delete";
+import { List, ListItem, ListItemAvatar, ListItemText } from "@mui/material";
+import { deleteDoc, doc } from "firebase/firestore";
 import { db } from "../firebase.js";
-import { doc, deleteDoc } from "firebase/firestore";
 import './todo.css';
 
 const Todo = ({ arr }) => {
